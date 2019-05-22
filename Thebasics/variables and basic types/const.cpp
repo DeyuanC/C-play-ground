@@ -16,4 +16,5 @@ pt2 = &ib;  //ok  but pt1 = &ib is error
 int *pt3 =pt1; // ok  top level const is ignored  but int *pt3 =pt2 is error
 const int *pt4 =pt2; //ok  assign const to const
   return 0;
+  //
 }
