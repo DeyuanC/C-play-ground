@@ -47,7 +47,7 @@ auto *pt_a1 = &kx2; // pt_a1 is same as pt_d  they are all pointers to a const d
 //(*pt_a1)++; //error
 //cout<<pt_a1<<pt_d; // store same address
 
-cout<<typeid(pt_a1).name();
+cout<<typeid(pt_d3).name();
 
 
 
