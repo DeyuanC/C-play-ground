@@ -20,5 +20,7 @@ int main(){
   const vector<double> &rf_v = v_a;
   const vector<double> v_b = v_a;  // both v_b and rf_v have same value but differnt address
   cout<<rf_v[1]<<v_b[1];
+
 	return 0;
+
 }
