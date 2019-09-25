@@ -11,4 +11,4 @@ template <typename T> std::vector<std::vector<T>> ArrayCut(const std::vector<T> 
     arrayout[arrayout.size()-1].push_back(arrayin[i]);
   }
   return arrayout;
-}
+};

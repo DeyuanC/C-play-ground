@@ -32,7 +32,7 @@ void quickSort(vector<T> &array, int left, int right)
 
 int main()
 {
-	vector<double> array = {5,4,3,2,1};
+	vector<double> array = {2,3,3,4,2,1,3,2,1};
 
 	quickSort(array,0,array.size()-1);
   for(auto &p:array)

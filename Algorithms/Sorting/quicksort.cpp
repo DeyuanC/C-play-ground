@@ -1,8 +1,9 @@
 #include<iostream>
+
 using namespace std;
 
 
-void quickSort(int s[], int l, int r)
+void quickSort(int* s, int l, int r)
 {
 	if (l< r)
 	{
@@ -24,6 +25,27 @@ void quickSort(int s[], int l, int r)
 	}
 }
 
+void myquickSort(int *s,const int left,const int right){
+	if (left<right) { //else, array is sorted already
+
+	int key = s[left];
+	int i = left;
+	int j = right;
+	while(i<j){
+		while (i<j&&s[j]>=key)
+			j--;
+		s[i]=s[j];
+		i++;
+		while(i<j&&s[i]<=key)
+			i++;
+		s[j]=s[i];
+		j--;
+	}
+	s[i]=key;
+	myquickSort(s,left,i-1);
+	myquickSort(s,i+1,right);
+}
+}
 int main()
 {
 	int array[]={2,3,3,3,1,1,1},k;
@@ -32,7 +54,7 @@ int main()
 	for(k=0;k<len;k++)
 		cout<<array[k]<<",";
 	cout<<endl;
-	quickSort(array,0,len-1);
+	myquickSort(array,0,len-1);
 	cout<<"The sorted arrayare:"<<endl;
 	for(k=0;k<len;k++)
 		cout<<array[k]<<",";
