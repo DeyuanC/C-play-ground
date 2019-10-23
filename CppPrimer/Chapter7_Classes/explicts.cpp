@@ -31,6 +31,7 @@ int main()
 {
 
     A a(10);
+    A aa=10; // explicit function can not be called
     B b =10;
     return 0;
 }

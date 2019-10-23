@@ -1,6 +1,10 @@
 #include<iostream>
 #include<vector>
 using namespace std;
+<<<<<<< HEAD
+=======
+//很慢
+>>>>>>> cacec02c54bb62c53633c5987dd00d6268f66639
 class Solution {
 public:
     int maxArea(vector<int>& height) {
